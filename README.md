@@ -31,17 +31,21 @@ Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
 
 ## Instrucciones de Instalación
 
-### 1. Clonar el Repositorio
+ 1.  **Clonar el Repositorio**
 
 Clona este repositorio en tu máquina local utilizando Git:
 
-```bash
 git clone https://github.com/tu-usuario/netflix-clone-laravel.git
-´´´
+
 cd netflix-clone-laravel
- ### 2. Instalar Dependencias
+ 2. **Instalar Dependencias**
 Instala todas las dependencias del proyecto utilizando Composer y NPM:
 
 - composer install
 - npm install
 - npm run dev
+
+3. Inicia el servidor de desarrollo:
+
+php artisan serve
+## Ahora deberías poder acceder al proyecto en http://localhost:8000.
