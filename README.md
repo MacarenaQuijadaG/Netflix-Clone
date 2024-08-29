@@ -37,9 +37,9 @@ Clona este repositorio en tu máquina local utilizando Git:
 
 ```bash
 git clone https://github.com/tu-usuario/netflix-clone-laravel.git
+´´´
 cd netflix-clone-laravel
-
-### 2. Instalar Dependencias
+ ### 2. Instalar Dependencias
 Instala todas las dependencias del proyecto utilizando Composer y NPM:
 
 - composer install
