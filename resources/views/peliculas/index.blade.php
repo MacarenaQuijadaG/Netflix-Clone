@@ -21,9 +21,12 @@
         <td>{{$pelicula->imagen}}</td>
         <td>
           <a class="btn btn-primary" href="{{ route('peliculas.edit',$pelicula->id)}}" role="button">Editar</a>
-        </td>
-        <td>
-          <a class="btn btn-danger" href="#" role="button">Eliminar</a>
+          <a class="btn btn-danger btn-flat" href="#" onclick="event.preventDefault(); document.getElementById('delete-form-{{ $pelicula->id }}').submit();">Eliminar</a>
+
+          <form action="{{ route('peliculas.destroy',$pelicula->id)}}" method="POST" id="delete-form-{{ $pelicula->id }}" style="display: none;">
+               @csrf
+               @method('DELETE')
+          </form>
         </td>
       </tr>
     @endforeach

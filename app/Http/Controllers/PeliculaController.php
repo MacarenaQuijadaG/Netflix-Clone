@@ -101,6 +101,10 @@ class PeliculaController extends Controller
      */
     public function destroy(pelicula $pelicula)
     {
-        //
+        // funcion de eliminar una pelicula o serie
+
+        $pelicula->delete();
+        return back();
     }
 }
+
