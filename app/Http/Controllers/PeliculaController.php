@@ -30,6 +30,7 @@ class PeliculaController extends Controller
     public function create()
     {
         //
+        return view('peliculas.create');
     }
 
     /**
@@ -40,9 +41,16 @@ class PeliculaController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        // se utiliza para insertar y extraer datos de la bd
+       // dd($request->all());
 
+        $pelicula = Pelicula::create(
+            $request->all()
+        );
+        //dd($pelicula);
+        return back();
+    
+    }
     /**
      * Display the specified resource.
      *
