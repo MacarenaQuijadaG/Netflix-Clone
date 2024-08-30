@@ -5,20 +5,27 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Nombre</th>
       <th scope="col">Titulo</th>
       <th scope="col">Descripcion</th>
       <th scope="col">Imagen</th>
+      <th scope="col">Acciones</th>
+      
     </tr>
   </thead>
   <tbody class="table-group-divider">
     @foreach ($peliculas as $pelicula)
-        <tr>
+      <tr>
         <th scope="row">{{$pelicula->id}}</th>
         <td>{{$pelicula->nombre}}</td>
         <td>{{$pelicula->descripcion}}</td>
         <td>{{$pelicula->imagen}}</td>
-        </tr>
+        <td>
+          <a class="btn btn-primary" href="{{ route('peliculas.edit',$pelicula->id)}}" role="button">Editar</a>
+        </td>
+        <td>
+          <a class="btn btn-danger" href="#" role="button">Eliminar</a>
+        </td>
+      </tr>
     @endforeach
    
    

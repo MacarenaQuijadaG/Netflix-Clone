@@ -29,7 +29,7 @@ class PeliculaController extends Controller
      */
     public function create()
     {
-        //
+        // se crea la funxion crear pelicula o serie
         return view('peliculas.create');
     }
 
@@ -70,7 +70,8 @@ class PeliculaController extends Controller
      */
     public function edit(pelicula $pelicula)
     {
-        //
+        // se crea la funcion editar pelicula o serie 
+        return view('peliculas.edit', compact('pelicula'));
     }
 
     /**
@@ -82,7 +83,14 @@ class PeliculaController extends Controller
      */
     public function update(Request $request, pelicula $pelicula)
     {
-        //
+        //actualiza en la base de datos
+
+        $pelicula = $pelicula->update(
+            $request->all()
+        );
+
+        return redirect()->route('peliculas.index');
+        
     }
 
     /**
