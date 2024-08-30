@@ -1,8 +1,10 @@
-# Netflix Clone - Laravel & MySQL
+# Netflix Clone - Administrador
 
 ## Descripción del Proyecto
 
 Este es un proyecto de clonación de la interfaz y funcionalidades básicas de Netflix, desarrollado utilizando el framework Laravel y la base de datos MySQL. El propósito de este proyecto es crear una aplicación web donde los usuarios puedan navegar, buscar y reproducir contenido multimedia (películas, series, etc.), similar a la plataforma original de Netflix.
+
+Actualmente se esta desarrollando la funcionalidad de crear, editar, lstar, eliminar que el administrador tiene acceso
 
 ## Tecnologías Utilizadas
 
