@@ -50,4 +50,4 @@ Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
    php artisan serve
    ```
 
-#### Ahora deberías poder acceder al proyecto en http://localhost:8000.
+#### Ahora deberías poder acceder al proyecto en http://localhost:8000
